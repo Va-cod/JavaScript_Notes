@@ -36,7 +36,7 @@ console.log(`Age: ${age}`);
 
 
 // EXAMPLE #3
-console.log("\nEXAMPLE #2");
+console.log("\nEXAMPLE #3");
 
 let dayHour = 5;
 let message;
@@ -55,8 +55,9 @@ if (dayHour >= 6 && dayHour <= 11) {
 
 console.log("Message: " + message);
 
-// ESTRUCTURA SWITCH
-console.log("\nESTRUCTURA SWITCH")
+// SWITCH STRUCTURE -> The switch statement in JavaScript evaluates cases using strict equality (===)
+console.log("\nSWITCH STRUCTURE")
+console.log("\nEXAMPLE #1");
 
 let number = 9;
 let text;
@@ -80,5 +81,29 @@ switch(number) {
     default:
         text = `Error value`
 }
-
 console.log(text)
+
+console.log("\nEXAMPLE #2");
+
+let month = 5;
+let seasonYear;
+
+switch(month) {
+    case 1: case 2: case 3:
+        seasonYear = "Spring"
+        break
+    case 4: case 5: case 6:
+        seasonYear = "Summer"
+        break
+    case 7: case 8: case 9:
+        seasonYear = "Winter"
+        break
+    case 10: case 11: case 12:
+        seasonYear = "Fall"
+        break
+    default:
+        seasonYear = "Error value" 
+        break   
+}
+
+console.log(`Season of the year: ${seasonYear}`)
